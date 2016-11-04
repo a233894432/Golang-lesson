@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
-func main()  {
-    fmt.Println("000") 
+func main() {
+	fmt.Println("000")
+	fmt.Println("jjj")
 }
