@@ -32,7 +32,7 @@
     "go.useDiffForFormatting": true,
 
     // Complete functions with their parameter signature
-    "go.useCodeSnippetsOnFunctionSuggest": false,
+    "go.useCodeSnippetsOnFunctionSuggest": false,  
 
     // Specifies the GOPATH to use when no environment variable is set.
     "go.gopath": "E:\\github\\golang-lesson",
