@@ -35,10 +35,10 @@
     "go.useCodeSnippetsOnFunctionSuggest": false,
 
     // Specifies the GOPATH to use when no environment variable is set.
-    "go.gopath": "/Volumes/ocz/github.com/golang-lesson",
+    "go.gopath": "E:\\github\\golang-lesson",
 
     // Specifies the GOROOT to use when no environment variable is set.
-    "go.goroot": "/usr/local/go",
+    "go.goroot": "D:\\Go",
 
     // Run formatting tool on save.
     "go.formatOnSave": true,
