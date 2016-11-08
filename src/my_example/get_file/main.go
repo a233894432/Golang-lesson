@@ -25,8 +25,8 @@ func main() {
 
 	//调用Stat方法获取文件的信息
 	entry, err := p.Stat(nil, key)
-	//打印列取的信息
-	fmt.Println(entry)
+	//打印列取的信息 Hash 就是文件 名
+	fmt.Println(entry.Hash)
 	//打印出错时返回的信息
 	if err != nil {
 		fmt.Println(err)

@@ -16,7 +16,6 @@
 - [Russ Cox blog](http://research.swtch.com/)
 - [go book](http://go-book.appsp0t.com/)
 - [golangtutorials](http://golangtutorials.blogspot.com)
-- [轩脉刃de刀光剑影](http://www.cnblogs.com/yjf512/)
 - [Go 官网文档](http://golang.org/doc/)
 - [Network programming with Go](http://jan.newmarch.name/go/)
 - [setup-the-rails-application-for-internationalization](http://guides.rubyonrails.org/i18n.html#setup-the-rails-application-for-internationalization)
