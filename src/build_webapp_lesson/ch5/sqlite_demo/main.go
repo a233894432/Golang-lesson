@@ -15,8 +15,8 @@ func main() {
 	//插入数据
 	stmt, err := db.Prepare("INSERT INTO userinfo(username, departname, created) values(?,?,?)")
 	checkErr(err)
-
-	res, err := stmt.Exec("astaxie", "研发部门", "2012-12-09")
+ 
+	  res, err := stmt.Exec("astaxie", "研发部门", "2012-12-09")
 	checkErr(err)
 
 	id, err := res.LastInsertId()
