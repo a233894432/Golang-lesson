@@ -25,8 +25,15 @@ func sayhelloName(w http.ResponseWriter, r *http.Request) {
 func login(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("method:", r.Method) //get request method
 	if r.Method == "GET" {
-		t, _ := template.ParseFiles("login.gtpl")
-		t.Execute(w, nil)
+		// t, _ := template.ParseFiles("login.gtpl")
+		// err := t.ExecuteTemplate(w, "login", "nil")
+
+		t, err := template.New("foo").Parse(`{{define "T"}}Hello, {{.}}!{{end}}`)
+		err = t.ExecuteTemplate(w, "T", "<script>alert('you have been pwned')</script>")
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
 	} else {
 		r.ParseForm()
 		// logic part of log in
