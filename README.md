@@ -21,3 +21,9 @@
 - [setup-the-rails-application-for-internationalization](http://guides.rubyonrails.org/i18n.html#setup-the-rails-application-for-internationalization)
 - [The Cross-Site Scripting (XSS) FAQ](http://www.cgisecurity.com/xss-faq.html)
 - [RESTFul](http://www.ruanyifeng.com/blog/2011/09/restful.html)
+- [http://gobyexample.everyx.in/](http://gobyexample.everyx.in/)
+- [https://github.com/jemygraw/TechDoc](https://github.com/jemygraw/TechDoc)
+- [https://github.com/jemygraw/GoQuickLearn](https://github.com/jemygraw/GoQuickLearn)
+- [https://github.com/mmcgrana/gobyexample](https://github.com/mmcgrana/gobyexample)
+- [https://github.com/mmcgrana/gobyexample](https://github.com/mmcgrana/gobyexample)
+ 
