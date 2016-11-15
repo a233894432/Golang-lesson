@@ -2,9 +2,6 @@
 主要是用来记录学习Go的一些实例，以及 标准包的一此实例
 > build-web-application-with-golang books,  example golang
 
-
-
-
   
 
 # 参考来源
@@ -24,6 +21,5 @@
 - [http://gobyexample.everyx.in/](http://gobyexample.everyx.in/)
 - [https://github.com/jemygraw/TechDoc](https://github.com/jemygraw/TechDoc)
 - [https://github.com/jemygraw/GoQuickLearn](https://github.com/jemygraw/GoQuickLearn)
-- [https://github.com/mmcgrana/gobyexample](https://github.com/mmcgrana/gobyexample)
 - [https://github.com/mmcgrana/gobyexample](https://github.com/mmcgrana/gobyexample)
  
