@@ -40,7 +40,6 @@ func main() {
 	/**out
 	Id: 2 Name: 张三
 	x= 4
-
 	 */
 
 
