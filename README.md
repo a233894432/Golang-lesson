@@ -23,3 +23,4 @@
 - [https://github.com/jemygraw/GoQuickLearn](https://github.com/jemygraw/GoQuickLearn)
 - [https://github.com/mmcgrana/gobyexample](https://github.com/mmcgrana/gobyexample)
  
+- [golang 101 hack](https://nanxiao.gitbooks.io/golang-101-hacks/)
