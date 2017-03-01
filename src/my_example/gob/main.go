@@ -7,7 +7,7 @@ import (
 
 type User struct {
     Username string
-    Password string
+    Password string 
 }
 
 func main() {

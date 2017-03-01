@@ -7,4 +7,5 @@ import (
 func main() {
 	fmt.Println("000")
 	fmt.Println("jjj")
+	fmt.Println("name")
 }

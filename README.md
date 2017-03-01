@@ -24,3 +24,19 @@
 - [https://github.com/mmcgrana/gobyexample](https://github.com/mmcgrana/gobyexample)
  
 - [golang 101 hack](https://nanxiao.gitbooks.io/golang-101-hacks/)
+
+
+```
+    visual studio code 
+        gopm get -u -v github.com/nsf/gocode
+        gopm get -u -v github.com/rogpeppe/godef
+        gopm get -u -v github.com/zmb3/gogetdoc
+        gopm get -u -v github.com/golang/lint/golint
+        gopm get -u -v github.com/lukehoban/go-outline
+        gopm get -u -v github.com/sqs/goreturns
+        gopm get -u -v golang.org/x/tools/cmd/gorename
+        gopm get -u -v github.com/tpng/gopkgs
+        gopm get -u -v github.com/newhook/go-symbols
+        gopm get -u -v golang.org/x/tools/cmd/guru
+        gopm get -u -v github.com/cweill/gotests/...
+```
