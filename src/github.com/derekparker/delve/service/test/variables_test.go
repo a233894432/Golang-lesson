@@ -7,10 +7,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/derekparker/delve/proc"
+	"github.com/derekparker/delve/pkg/proc"
 	"github.com/derekparker/delve/service/api"
 
-	protest "github.com/derekparker/delve/proc/test"
+	protest "github.com/derekparker/delve/pkg/proc/test"
 )
 
 var pnormalLoadConfig = proc.LoadConfig{true, 1, 64, 64, -1}
@@ -54,7 +54,7 @@ func assertVariable(t *testing.T, variable *proc.Variable, expected varTest) {
 }
 
 func evalVariable(p *proc.Process, symbol string, cfg proc.LoadConfig) (*proc.Variable, error) {
-	scope, err := p.CurrentThread.Scope()
+	scope, err := p.CurrentThread().Scope()
 	if err != nil {
 		return nil, err
 	}
@@ -68,7 +68,7 @@ func (tc *varTest) alternateVarTest() varTest {
 }
 
 func setVariable(p *proc.Process, symbol, value string) error {
-	scope, err := p.CurrentThread.Scope()
+	scope, err := p.CurrentThread().Scope()
 	if err != nil {
 		return err
 	}
@@ -348,7 +348,7 @@ func TestLocalVariables(t *testing.T) {
 		assertNoError(err, t, "Continue() returned an error")
 
 		for _, tc := range testcases {
-			scope, err := p.CurrentThread.Scope()
+			scope, err := p.CurrentThread().Scope()
 			assertNoError(err, t, "AsScope()")
 			vars, err := tc.fn(scope, pnormalLoadConfig)
 			assertNoError(err, t, "LocalVariables() returned an error")
@@ -447,6 +447,11 @@ func TestEvalExpression(t *testing.T) {
 		{"str1[3:]", false, "\"34567890\"", "\"34567890\"", "string", nil},
 		{"str1[0:12]", false, "", "", "string", fmt.Errorf("index out of bounds")},
 		{"str1[5:3]", false, "", "", "string", fmt.Errorf("index out of bounds")},
+
+		// NaN and Inf floats
+		{"pinf", false, "+Inf", "+Inf", "float64", nil},
+		{"ninf", false, "-Inf", "-Inf", "float64", nil},
+		{"nan", false, "NaN", "NaN", "float64", nil},
 
 		// pointers
 		{"*p2", false, "5", "5", "int", nil},

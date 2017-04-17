@@ -14,13 +14,13 @@ import (
 	"syscall"
 	"unicode"
 
-	"github.com/derekparker/delve/config"
+	"github.com/derekparker/delve/pkg/config"
+	"github.com/derekparker/delve/pkg/terminal"
+	"github.com/derekparker/delve/pkg/version"
 	"github.com/derekparker/delve/service"
 	"github.com/derekparker/delve/service/api"
 	"github.com/derekparker/delve/service/rpc2"
 	"github.com/derekparker/delve/service/rpccommon"
-	"github.com/derekparker/delve/terminal"
-	"github.com/derekparker/delve/version"
 	"github.com/spf13/cobra"
 )
 
@@ -62,7 +62,10 @@ Delve enables you to interact with your program by controlling the execution of 
 evaluating variables, and providing information of thread / goroutine state, CPU register state and more.
 
 The goal of this tool is to provide a simple yet powerful interface for debugging Go programs.
-`
+
+Pass flags to the program you are debugging using ` + "`--`" + `, for example:
+
+` + "`dlv exec ./hello -- server --config conf/config.toml`"
 
 // New returns an initialized command tree.
 func New() *cobra.Command {

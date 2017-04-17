@@ -29,7 +29,8 @@ check-cert:
 ifneq "$(TRAVIS)" "true"
 ifdef DARWIN
 ifeq "$(CERT)" ""
-	$(error You must provide a CERT environment variable in order to codesign the binary.)
+	scripts/gencert.sh || (echo "An error occurred when generating and installing a new certicate"; exit 1)
+        CERT = dlv-cert
 endif
 endif
 endif
@@ -37,10 +38,8 @@ endif
 build: check-cert
 	go build $(BUILD_FLAGS) github.com/derekparker/delve/cmd/dlv
 ifdef DARWIN
-ifneq "$(GOBIN)" ""
-	codesign -s "$(CERT)"  $(GOBIN)/dlv
-else
-	codesign -s "$(CERT)"  $(GOPATH)/bin/dlv
+ifdef CERT
+	codesign -s "$(CERT)"  ./dlv
 endif
 endif
 
@@ -66,7 +65,7 @@ else
 endif
 
 test-proc-run:
-	go test $(TEST_FLAGS) $(BUILD_FLAGS) -test.run="$(RUN)" $(PREFIX)/proc
+	go test $(TEST_FLAGS) $(BUILD_FLAGS) -test.v -test.run="$(RUN)" $(PREFIX)/pkg/proc
 
 test-integration-run:
 	go test $(TEST_FLAGS) $(BUILD_FLAGS) -test.run="$(RUN)" $(PREFIX)/service/test
