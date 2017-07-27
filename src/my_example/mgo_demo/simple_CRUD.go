@@ -63,7 +63,7 @@ func (s *MySession) UpdateRecord(p Person) {
 	session := s.mainSession.Copy()
 	defer session.Close()
 
-	p.Name = "New Name"
+	p.Name = "Diogo"
 	conn := session.DB("simple").C("CRUD")
 
 	err := conn.Update(bson.M{"name": "Eric"}, bson.M{"$set": p})
@@ -120,18 +120,17 @@ func main() {
 
 	// Create the record
 	mys.CreateNewRecord(person1)
-	time.Sleep(5 * time.Second)
+	time.Sleep(2 * time.Second)
 
 	// Read the record
 	mys.ReadRecord()
-	time.Sleep(5 * time.Second)
+	time.Sleep(2 * time.Second)
 
 	// Update the record
 	mys.UpdateRecord(person1)
-	time.Sleep(5 * time.Second)
+	time.Sleep(2 * time.Second)
 
 	// Delete the record
 	//mys.DeleteRecord(person1)
 	//time.Sleep(5 * time.Second)
 }
-
