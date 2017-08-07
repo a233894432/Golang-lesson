@@ -3,6 +3,13 @@
 > build-web-application-with-golang books,  example golang
 
   
+## 书的名称
+- `build_webapp_lesson`  <Go Web 编程> 
+- `go_standard_package`  <Go 标准库>
+- `gobyexample.com`      < 一些实例>
+- `my_exmaple`           < 个人实例> 
+- `network-prog-with-go`  < go网络编程 >
+- `go-recipes`             < go-recipes> 
 
 # 参考来源
 - [gobyexample.com](http://gobyexample.com)

@@ -19,9 +19,10 @@ _cgo_export.*
 
 _testmain.go
 
+logs.txt
 *.exe
 *.test
 *.prof
-.vscode/*
-.idea/
-*.zip
+*.txt
+debug
+.vscode
