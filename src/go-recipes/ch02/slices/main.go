@@ -13,6 +13,7 @@ func main() {
 	fmt.Println(len(x))
 	fmt.Println(cap(x))
 
+	fmt.Println("---")
 	y := make([]int, 3)
 	y[0] = 10
 	y[1] = 20
@@ -20,15 +21,15 @@ func main() {
 	fmt.Println(y)
 	fmt.Println(len(y))
 	fmt.Println(cap(y))
-
+	fmt.Println("---")
 	z := []int{10, 20, 30}
 	fmt.Println(len(z))
 	fmt.Println(cap(z))
-
+	fmt.Println("---")
 	z1 := []int{0: 10, 2: 30}
 	fmt.Println(len(z1))
 	fmt.Println(cap(z1))
-
+	fmt.Println("---")
 	x1 := []int{10, 20, 30}
 	y1 := append(x1, 40, 50)
 	fmt.Println(x1, y1)
