@@ -12,6 +12,7 @@
 - `go-recipes`             < go-recipes > 
 - `Web Development with Go` < Web Development with Go WEB开发>
 - `The_Golang_Standard_Library` Golang 标准库
+- `web_dev_golang_anti_textbook` < web_dev_golang_anti_textbook >
 
 ## PDF书的名称
 
