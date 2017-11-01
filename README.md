@@ -53,4 +53,8 @@
         gopm get -u -v github.com/newhook/go-symbols
         gopm get -u -v golang.org/x/tools/cmd/guru
         gopm get -u -v github.com/cweill/gotests/...
+
+        // 可以自动增加 tags
+        go get github.com/fatih/gomodifytags
+
 ```
