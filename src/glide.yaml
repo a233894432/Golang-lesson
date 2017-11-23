@@ -1,0 +1,375 @@
+package: .
+import:
+- package: 9fans.net/go
+  subpackages:
+  - acme
+- package: basic/cgo/lib
+- package: basic/prof
+- package: camlistore.org
+  subpackages:
+  - pkg/googlestorage
+- package: code.google.com/p/go.net
+  subpackages:
+  - publicsuffix
+- package: github.com/Joker/jade
+- package: github.com/PuerkitoBio/goquery
+- package: github.com/Sirupsen/logrus
+- package: github.com/Unknwon/i18n
+- package: github.com/caixw/apidoc
+  subpackages:
+  - app
+  - doc
+  - input
+  - locale
+  - output
+  - output/static
+- package: github.com/cweill/gotests
+  subpackages:
+  - gotests/process
+  - internal/goparser
+  - internal/input
+  - internal/models
+  - internal/output
+  - internal/render
+  - internal/render/bindata
+- package: github.com/dancannon/gorethink
+- package: github.com/derekparker/delve
+  subpackages:
+  - cmd/dlv/cmds
+  - config
+  - dwarf/frame
+  - dwarf/line
+  - dwarf/op
+  - dwarf/reader
+  - dwarf/util
+  - pkg/config
+  - pkg/dwarf/frame
+  - pkg/dwarf/line
+  - pkg/dwarf/op
+  - pkg/dwarf/reader
+  - pkg/dwarf/util
+  - pkg/proc
+  - pkg/target
+  - pkg/terminal
+  - pkg/version
+  - service
+  - service/api
+  - service/debugger
+  - service/rpc1
+  - service/rpc2
+  - service/rpccommon
+- package: github.com/dgrijalva/jwt-go
+  subpackages:
+  - request
+- package: github.com/fairlyblank/md2min
+- package: github.com/fatih/camelcase
+- package: github.com/fatih/structtag
+- package: github.com/garyburd/redigo
+  subpackages:
+  - redis
+- package: github.com/geekypanda/httpcache
+- package: github.com/go-sql-driver/mysql
+- package: github.com/goinaction/code
+  subpackages:
+  - chapter10/listing06/pubsub
+  - chapter2/sample/matchers
+  - chapter2/sample/search
+  - chapter3/dbdriver/postgres
+  - chapter3/words
+  - chapter5/listing64/counters
+  - chapter5/listing68/counters
+  - chapter5/listing71/entities
+  - chapter5/listing74/entities
+  - chapter7/patterns/pool
+  - chapter7/patterns/runner
+  - chapter7/patterns/search
+  - chapter7/patterns/work
+  - chapter9/listing17/handlers
+- package: github.com/golang/lint
+- package: github.com/golang/protobuf
+  subpackages:
+  - proto
+- package: github.com/gorilla/mux
+- package: github.com/gorilla/websocket
+- package: github.com/imdario/mergo
+- package: github.com/influxdata/influxdb
+  subpackages:
+  - client/v2
+- package: github.com/iris-contrib/formBinder
+- package: github.com/iris-contrib/httpexpect
+- package: github.com/issue9/assert
+- package: github.com/issue9/is
+- package: github.com/issue9/term
+  subpackages:
+  - ansi
+  - colors
+- package: github.com/issue9/utils
+- package: github.com/issue9/version
+- package: github.com/kataras/cli
+- package: github.com/kataras/go-errors
+- package: github.com/kataras/go-fs
+- package: github.com/kataras/go-serializer
+- package: github.com/kataras/go-template
+  subpackages:
+  - amber
+  - django
+  - handlebars
+  - html
+- package: github.com/kataras/rizla
+  subpackages:
+  - rizla
+- package: github.com/klauspost/compress
+  subpackages:
+  - gzip
+- package: github.com/lib/pq
+- package: github.com/mattn/go-colorable
+- package: github.com/mattn/go-sqlite3
+- package: github.com/peterh/liner
+- package: github.com/pquerna/ffjson
+  subpackages:
+  - ffjson
+  - fflib/v1
+  - fflib/v1/internal
+  - generator
+  - inception
+  - shared
+- package: github.com/rogpeppe/godef
+  subpackages:
+  - go/ast
+  - go/parser
+  - go/printer
+  - go/scanner
+  - go/token
+  - go/types
+- package: github.com/rs/cors
+- package: github.com/russross/blackfriday
+- package: github.com/shijuvar/go-recipes
+  subpackages:
+  - binarypkg
+  - ch01/lib
+  - ch01/strutils
+  - ch07/bookmarkapi/common
+  - ch07/bookmarkapi/controllers
+  - ch07/bookmarkapi/model
+  - ch07/bookmarkapi/routers
+  - ch07/bookmarkapi/store
+  - ch08/httpbdd/controllers
+  - ch08/httpbdd/model
+  - ch08/httpbdd/store
+  - grpc/customer
+- package: github.com/skratchdot/open-golang
+  subpackages:
+  - open
+- package: github.com/spf13/cobra
+  subpackages:
+  - doc
+- package: github.com/sqs/goreturns
+  subpackages:
+  - returns
+- package: github.com/valyala/bytebufferpool
+- package: go4.org
+  subpackages:
+  - syncutil/singleflight
+- package: golang.org/x/crypto/acme/autocert
+- package: golang.org/x/crypto/bcrypt
+- package: golang.org/x/crypto/ssh/terminal
+- package: golang.org/x/debug/dwarf
+- package: golang.org/x/debug/elf
+- package: golang.org/x/debug/macho
+- package: golang.org/x/net/bpf
+- package: golang.org/x/net/context
+- package: golang.org/x/net/html
+  subpackages:
+  - atom
+- package: golang.org/x/net/http2
+  subpackages:
+  - hpack
+- package: golang.org/x/net/idna
+- package: golang.org/x/net/internal/iana
+- package: golang.org/x/net/internal/netreflect
+- package: golang.org/x/net/internal/timeseries
+- package: golang.org/x/net/ipv4
+- package: golang.org/x/net/ipv6
+- package: golang.org/x/net/lex/httplex
+- package: golang.org/x/net/publicsuffix
+- package: golang.org/x/net/webdav/internal/xml
+- package: golang.org/x/net/websocket
+- package: golang.org/x/oauth2
+  subpackages:
+  - google
+- package: golang.org/x/sys/unix
+- package: golang.org/x/sys/windows
+  subpackages:
+  - registry
+  - svc
+  - svc/debug
+  - svc/eventlog
+  - svc/mgr
+- package: golang.org/x/text/cases
+- package: golang.org/x/text/collate
+- package: golang.org/x/text/encoding
+  subpackages:
+  - charmap
+  - htmlindex
+  - internal
+  - internal/identifier
+  - japanese
+  - korean
+  - simplifiedchinese
+  - traditionalchinese
+  - unicode
+- package: golang.org/x/text/internal
+  subpackages:
+  - colltab
+  - format
+  - format/plural
+  - gen
+  - stringset
+  - tag
+  - utf8internal
+- package: golang.org/x/text/language
+- package: golang.org/x/text/message
+- package: golang.org/x/text/runes
+- package: golang.org/x/text/secure/bidirule
+- package: golang.org/x/text/transform
+- package: golang.org/x/text/unicode/bidi
+- package: golang.org/x/text/unicode/cldr
+- package: golang.org/x/text/unicode/norm
+- package: golang.org/x/text/width
+- package: golang.org/x/tools/benchmark/parse
+- package: golang.org/x/tools/blog
+  subpackages:
+  - atom
+- package: golang.org/x/tools/cmd/guru/serial
+- package: golang.org/x/tools/container/intsets
+- package: golang.org/x/tools/cover
+- package: golang.org/x/tools/go/ast/astutil
+- package: golang.org/x/tools/go/buildutil
+- package: golang.org/x/tools/go/callgraph
+  subpackages:
+  - cha
+  - rta
+  - static
+- package: golang.org/x/tools/go/gcexportdata
+- package: golang.org/x/tools/go/gcimporter15
+- package: golang.org/x/tools/go/internal/gccgoimporter
+- package: golang.org/x/tools/go/loader
+- package: golang.org/x/tools/go/pointer
+- package: golang.org/x/tools/go/ssa
+  subpackages:
+  - interp
+  - ssautil
+- package: golang.org/x/tools/go/types/typeutil
+- package: golang.org/x/tools/godoc
+  subpackages:
+  - analysis
+  - dl
+  - proxy
+  - redirect
+  - short
+  - static
+  - util
+  - vfs
+  - vfs/gatefs
+  - vfs/httpfs
+  - vfs/mapfs
+  - vfs/zipfs
+- package: golang.org/x/tools/imports
+- package: golang.org/x/tools/playground
+  subpackages:
+  - socket
+- package: golang.org/x/tools/present
+- package: golang.org/x/tools/refactor/eg
+- package: golang.org/x/tools/refactor/importgraph
+- package: golang.org/x/tools/refactor/rename
+- package: golang.org/x/tools/refactor/satisfy
+- package: google.golang.org/api/compute/v1
+- package: google.golang.org/appengine
+  subpackages:
+  - datastore
+  - log
+  - memcache
+  - urlfetch
+  - user
+- package: google.golang.org/grpc
+- package: gopcp.v2/chapter2/talk/v2/chatbot
+- package: gopcp.v2/chapter4/loadgen/lib
+- package: gopcp.v2/chapter5/cmap
+- package: gopcp.v2/chapter6/webcrawler/errors
+- package: gopcp.v2/chapter6/webcrawler/examples/finder/internal
+- package: gopcp.v2/chapter6/webcrawler/examples/finder/monitor
+- package: gopcp.v2/chapter6/webcrawler/module
+  subpackages:
+  - local/analyzer
+  - local/downloader
+  - local/pipeline
+  - stub
+- package: gopcp.v2/chapter6/webcrawler/scheduler
+- package: gopcp.v2/chapter6/webcrawler/toolkit/buffer
+- package: gopcp.v2/chapter6/webcrawler/toolkit/reader
+- package: gopcp.v2/helper/log
+  subpackages:
+  - base
+  - field
+  - logrus
+- package: gopcp.v2/helper/pkgtool
+- package: gopkg.in/kataras/iris.v6
+  subpackages:
+  - adaptors/sessions/sessiondb/redis/service
+  - adaptors/typescript/npm
+- package: gopkg.in/mgo.v2
+  subpackages:
+  - bson
+  - internal/json
+  - internal/sasl
+  - internal/scram
+- package: gopkg.in/tomb.v2
+- package: gopkg.in/yaml.v2
+- package: gopl.io
+  subpackages:
+  - ch12/params
+  - ch13/bzip
+  - ch2/tempconv
+  - ch4/github
+  - ch5/links
+  - ch7/eval
+  - ch7/tempconv
+- package: loadgen/lib
+- package: logging
+- package: my_module/validator
+- package: pkgtool
+- package: qiniupkg.com/api.v7
+  subpackages:
+  - conf
+  - kodo
+  - kodocli
+- package: rsc.io/x86
+  subpackages:
+  - x86asm
+- package: util
+- package: webcrawler/analyzer
+- package: webcrawler/base
+- package: webcrawler/downloader
+- package: webcrawler/itempipeline
+- package: webcrawler/middleware
+- package: webcrawler/scheduler
+- package: webcrawler/tool
+testImport:
+- package: chapter09/testing
+- package: github.com/davecheney/profile
+- package: github.com/google/gofuzz
+- package: github.com/onsi/ginkgo
+- package: github.com/onsi/gomega
+- package: github.com/stretchr/testify
+  subpackages:
+  - require
+- package: golang.org/x/net/icmp
+- package: golang.org/x/net/internal/nettest
+- package: golang.org/x/sys/plan9
+- package: golang.org/x/text/currency
+- package: golang.org/x/text/unicode/rangetable
+- package: golang.org/x/tools/cmd/guru
+- package: golang.org/x/tools/go/gccgoexportdata
+- package: gopcp.v2/chapter4/loadgen/testhelper
+- package: gopkg.in/check.v1
+- package: loadgen/testhelper
