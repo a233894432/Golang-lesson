@@ -56,4 +56,22 @@
 
         // 可以自动增加 tags
         go get github.com/fatih/gomodifytags
+
+
+
+    新的插件
+        gocode
+        gopkgs
+        go-outline
+        go-symbols
+        guru
+        gorename
+        gomodifytags
+        goplay
+        impl
+        godef
+        goreturns
+        golint
+        gotests
+        dlv
 ```

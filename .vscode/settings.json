@@ -42,10 +42,10 @@
   "go.inferGopath": true,
 
   // Specifies the GOPATH to use when no environment variable is set. The inferred GOPATH from workspace root overrides this, if go.inferGopath is set to true.
-  "go.gopath": "f:/diogo/github.com/Golang-lesson",
+  "go.gopath": "e:/github.com/Golang-lesson",
 
   // Location to install the Go tools that the extension depends on if you don't want them in your GOPATH.
-  "go.toolsGopath": "f:/diogo/github.com/Golang-lesson",
+  "go.toolsGopath": "e:/github.com/Golang-lesson",
 
   // Specifies the GOROOT to use when no environment variable is set.
   "go.goroot": "C:/Go",
