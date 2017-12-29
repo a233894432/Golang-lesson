@@ -56,4 +56,6 @@
 
         // 可以自动增加 tags
         go get github.com/fatih/gomodifytags
+        // 可以检测错误并修复错误
+        go get -u github.com/alecthomas/gometalinter
 ```
