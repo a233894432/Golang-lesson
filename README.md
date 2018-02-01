@@ -56,6 +56,22 @@
 
         // 可以自动增加 tags
         go get github.com/fatih/gomodifytags
-        // 可以检测错误并修复错误
-        go get -u github.com/alecthomas/gometalinter
+
+
+
+    新的插件
+        gocode
+        gopkgs
+        go-outline
+        go-symbols
+        guru
+        gorename
+        gomodifytags
+        goplay
+        impl
+        godef
+        goreturns
+        golint
+        gotests
+        dlv
 ```
