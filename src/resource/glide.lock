@@ -1,0 +1,36 @@
+hash: 983c0c5d50de0ca550741f823dfa7afde3ecef21b9f4104567e366d4861636d3
+updated: 2018-06-21T11:34:27.0497266+08:00
+imports:
+- name: 9fans.net/go
+  version: d40625903c90860e82649376c42132c26a2a6f12
+  subpackages:
+  - acme
+- name: github.com/cweill/gotests
+  version: a3c1a1257668d18c210c0a63299466e301f67c27
+  subpackages:
+  - '...'
+- name: github.com/golang/lint
+  version: 470b6b0bb3005eda157f0275e2e4895055396a81
+  subpackages:
+  - golint
+- name: github.com/lukehoban/go-outline
+  version: e785568742524aa488d7332e7619dba87b2a8b9d
+- name: github.com/newhook/go-symbols
+  version: b75dfefa0d235b7ad4cc62f3cadbccb3ea0db81f
+- name: github.com/nsf/gocode
+  version: 9d1e0378d35b0527c9aef0d17c0913fc38d88b81
+- name: github.com/rogpeppe/godef
+  version: b692db1de5229d4248e23c41736b431eb665615d
+- name: github.com/sqs/goreturns
+  version: 83e02874ec120f73d5f7dd382d62449dc8abe9c6
+- name: github.com/tpng/gopkgs
+  version: 81e90e22e204f5f18f1e36036af858bf7aa4bde0
+- name: github.com/zmb3/gogetdoc
+  version: 10095872a7c53aa605a7e6d9b3db2c636bd78f7a
+- name: golang.org/x/net
+  version: db08ff08e8622530d9ed3a0e8ac279f6d4c02196
+- name: golang.org/x/sys
+  version: ad87a3a340fa7f3bed189293fbfa7a9b7e021ae1
+- name: golang.org/x/tools
+  version: 25b95b48224cce18163c7d49dcfb89a2d5ecd209
+testImports: []
