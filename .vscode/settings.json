@@ -46,7 +46,7 @@
   // Enable gocode's autobuild feature
   "go.gocodeAutoBuild": true,
   // Complete functions with their parameter signature
-  "go.useCodeSnippetsOnFunctionSuggest": false,
+  "go.useCodeSnippetsOnFunctionSuggest": true,
   // Include unimported packages in auto-complete suggestions.
   "go.autocompleteUnimportedPackages": false,
   // Pick 'godoc' or 'gogetdoc' to get documentation. In Go 1.5, godoc is used regardless of the choice here.

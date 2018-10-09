@@ -1,0 +1,22 @@
+package: resource
+import:
+- package: github.com/sqs/goreturns
+- package: github.com/nsf/gocode
+- package: github.com/rogpeppe/godef
+- package: github.com/golang/lint
+  subpackages:
+  - golint
+- package: github.com/lukehoban/go-outline
+- package: github.com/tpng/gopkgs
+- package: github.com/zmb3/gogetdoc
+- package: github.com/newhook/go-symbols
+- package: 9fans.net/go
+  subpackages:
+  - acme
+- package: github.com/cweill/gotests
+  version: ^1.5.2
+  subpackages:
+  - '...'
+- package: golang.org/x/tools
+- package: golang.org/x/net
+- package: golang.org/x/sys
