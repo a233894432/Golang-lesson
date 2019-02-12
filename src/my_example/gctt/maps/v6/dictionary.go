@@ -41,7 +41,6 @@ func (d Dictionary) Add(word, definition string) error {
 		return ErrWordExists
 	default:
 		return err
-
 	}
 
 	return nil
@@ -57,8 +56,6 @@ func (d Dictionary) Update(word, definition string) error {
 		d[word] = definition
 	default:
 		return err
-
 	}
-
 	return nil
 }
