@@ -7,6 +7,7 @@ func main() {
 	fmt.Printf("%p\n", &slice)
 	modify(slice)
 	fmt.Println(slice)
+	fmt.Println(len(slice))
 }
 
 func modify(slice []int) {
