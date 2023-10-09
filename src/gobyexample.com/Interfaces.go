@@ -6,11 +6,13 @@ package main
 import "fmt"
 import "math"
 
-// Here's a basic interface for geometric shapes.
-type geometry interface {
-	area() float64
-	perim() float64
-}
+type (
+	// Here's a basic interface for geometric shapes.
+	geometry interface {
+		area() float64
+		perim() float64
+	}
+)
 
 // For our example we'll implement this interface on
 // `rect` and `circle` types.

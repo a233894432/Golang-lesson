@@ -15,6 +15,8 @@
 * `Web Development with Go` < Web Development with Go WEB 开发 >
 * `The_Golang_Standard_Library` Golang 标准库
 * `web_dev_golang_anti_textbook` < web_dev_golang_anti_textbook >
+* `7days-golang` 7天学习系列
+
 
 ## PDF 书的名称
 
@@ -56,11 +58,7 @@
 
         // 可以自动增加 tags
         go get github.com/fatih/gomodifytags
-
-
-
-
-
+ 
 
     新的插件
         gocode

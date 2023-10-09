@@ -5,7 +5,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"gopcp.v2/chapter6/webcrawler/errors"
+	"../chapter6/webcrawler/errors"
 )
 
 // Buffer 代表FIFO的缓冲器的接口类型。

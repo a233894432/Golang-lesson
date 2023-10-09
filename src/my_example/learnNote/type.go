@@ -24,5 +24,6 @@ func judgeType(a interface{}) {
 		fmt.Println("the type of a is float")
 	default:
 		fmt.Println("unknown type")
+
 	}
 }

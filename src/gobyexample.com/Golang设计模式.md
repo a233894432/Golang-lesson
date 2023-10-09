@@ -10,7 +10,7 @@ func NewSingleton() *singleton {
          instance = &singleton{}
     }
     return instance
-}
+}````
 ```
 
 ```go

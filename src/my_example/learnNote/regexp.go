@@ -14,8 +14,8 @@ func main() {
 		"Name": "Wednesday",
 		"Age":  6,
 		"Parents": []interface{}{
-			"Gomez",
 			"Morticia",
+			"Gomez",
 		},
 	}
 
